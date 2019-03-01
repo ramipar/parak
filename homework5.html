@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>  
+  
+  <ul id="list">
+    <li>task1</li>
+  </ul>
+  <button id="btn" onclick="task()">add task</button><br>
+  <br>
+  number of tasks :<span id="tel">task number</span>
+
+
+
+
+  <script>
+    function task(){
+      let ask = prompt("add a task");
+      let ele = document.createElement("li");
+      let text = document.createTextNode(ask);
+      ele.appendChild(text);
+      let ule = document.getElementById("list");
+      ule.appendChild(ele)
+      ule.insertBefore(ele,ule.childNodes[0]);
+      teller();
+    }
+    let count =0;
+    function teller(){
+      let counter = document.getElementById("tel");
+     
+      counter.innerHTML = count++ ;
+    }
+  
+  </script>
+    
+    
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
